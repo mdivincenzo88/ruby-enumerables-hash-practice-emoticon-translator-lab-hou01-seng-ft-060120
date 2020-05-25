@@ -28,6 +28,7 @@ if emoticon == value[:japanese]
     return key
  
      end
+  
  end
- 
+    return "Sorry, that emoticon was not found"
 end
