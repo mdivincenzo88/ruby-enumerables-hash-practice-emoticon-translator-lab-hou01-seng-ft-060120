@@ -23,16 +23,10 @@ def get_english_meaning (file_path,emoticon)
   library = load_library (file_path)
  
 library.each do |key, value|
-  if value[:english] emoticon
-    
-   
-  value.each do |eng, jap|
-     if jap == emoticon
-     return eng
-    end
-  
-    end
-   
-end
-  library[emoticon][:english]
+  if value[:english] ==emoticon
+    return value[:japanese]
+ 
+     end
+ end
+ 
 end
