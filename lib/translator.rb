@@ -27,7 +27,6 @@ if emoticon == value[:english]
     return "Sorry, that emoticon was not found"
 end
  
-end
 
   
 
